@@ -1,0 +1,31 @@
+.slider h3,
+.slider h5,
+.our-clients h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-container {
+    height: 20%;
+}
+
+.parallax img {
+    filter: grayscale(1);
+    opacity: 0.5 !important;
+}
+
+.clients img {
+    max-width: 150px;
+}
+
+.services .container .row .card-panel {
+    max-height: 550px !important;
+}
+
+section,
+footer {
+    padding: 20px 0;
+}
+
+footer {
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.5);
+}

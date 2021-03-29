@@ -4,41 +4,318 @@
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Import Google Font Custom -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Jura&family=Work+Sans:wght@300;400;500;900&display=swap" rel="stylesheet">
-
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection" />
 
-    <!-- Import Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/myStyle.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Semy Luase Web</title>
 </head>
 
-<body>
+<body id="" class="scrollSpy">
 
     <!-- Navbar -->
-    <nav>
+    <div class="navbar-fixed">
+        <nav class="blue darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">SL Web</a>
+                    <a href="#" data-target="mobile-navbar" class="sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#our-clients">Client</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- sidebar -->
+    <ul class="sidenav" id="mobile-navbar">
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#our-clients">Client</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+    <!-- end sidebar -->
+    <!-- end Navbar -->
+
+    <!-- Slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="assets/img/slider/isai-ramos-K0yNjawjRkM-unsplash.jpg" alt="assets/img/slider/isai-ramos-K0yNjawjRkM-unsplash.jpg">
+                <!-- random image -->
+                <div class="caption left-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/img/slider/alessio-lin-AxlHH0jX6Gs-unsplash.jpg" alt="assets/img/slider/alessio-lin-AxlHH0jX6Gs-unsplash.jpg">
+                <!-- random image -->
+                <div class="caption right-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/img/slider/mike-stezycki-rAbgpA7oIgg-unsplash (1).jpg" alt="assets/img/slider/mike-stezycki-rAbgpA7oIgg-unsplash (1).jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/img/slider/seth-reese-jD1MyOgE7wY-unsplash.jpg" alt="assets/img/slider/seth-reese-jD1MyOgE7wY-unsplash.jpg">
+                <!-- random image -->
+                <div class="caption right-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="assets/img/slider/chris-barbalis-9qlSGW_LgKs-unsplash.jpg" alt="assets/img/slider/chris-barbalis-9qlSGW_LgKs-unsplash.jpg">
+                <!-- random image -->
+                <div class="caption left-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- End Slider -->
+
+    <!-- About Us -->
+    <section id="about-us" class="about-us scrollSpy">
         <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">My Portfolio</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
-                </ul>
+            <div class="row">
+                <h3 class="center light blue-text text-darken-3">About Us</h3>
+                <div class="col m6 light">
+                    <h5>We Are Profesional</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cupiditate nobis consectetur, a exercitationem iusto natus voluptatem provident accusamus sunt magni, minus qui ratione atque, placeat aperiam nostrum corrupti iure!</p>
+                </div>
+                <div class="col m6 light">
+                    <p>Web Development<span class="right">80%</span></p>
+                    <div class="progress blue lighten-2">
+                        <div class="determinate blue darken-2" style="width: 80%"></div>
+                    </div>
+                    <p>Landing Page<span class="right">90%</span></p>
+                    <div class="progress blue lighten-2">
+                        <div class="determinate blue darken-2" style="width: 90%"></div>
+                    </div>
+                    <p>Web Application<span class="right">85%</span></p>
+                    <div class="progress blue lighten-2">
+
+                        <div class="determinate blue darken-2" style="width: 85%"></div>
+                    </div>
+                    <p>API<span class="right">86%</span></p>
+                    <div class="progress blue lighten-2">
+                        <div class="determinate blue darken-2" style="width: 86%"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </section>
+    <!-- End About Us -->
+
+    <!-- Clients -->
+    <div class="parallax-container">
+        <div class="parallax"><img height="800" src="assets/img/michele-spinnato-N20LjgOVWAA-unsplash.jpg"></div>
+        <div class="container our-clients scrollSpy" id="our-clients">
+            <h3 class="center light white-text">Our Clients</h3>
+            <div class="row clients">
+                <div class="col">
+                    <img src="assets/img/clients/Gojek.png" alt="https://www.unduhlogo.com/2018/09/logo-gojek-vector.html">
+                </div>
+                <div class="col">
+                    <img src="assets/img/clients/Bukalapak.png" alt="https://www.unduhlogo.com/2018/10/logo-bukalapak-vector.html">
+                </div>
+                <div class="col">
+                    <img src="assets/img/clients/grab.png" alt="https://www.unduhlogo.com/2018/09/logo-grab-vector.html">
+                </div>
+                <div class="col">
+                    <img src="assets/img/clients/OVO.png" alt="https://www.unduhlogo.com/2018/12/logo-ovo-vector-png.html">
+                </div>
+                <div class="col">
+                    <img src="assets/img/clients/Tokopedia.png" alt="https://www.unduhlogo.com/2018/10/logo-tokopedia-vector.html">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Clients -->
+
+    <!-- Services -->
+    <section id="services" class="services grey lighten-3 scrollSpy">
+        <div class="container">
+            <div class="row">
+                <h3 class="center light blue-text text-darken-3">Services</h3>
+                <div class="col m3 s12">
+                    <div class="card-panel center">
+                        <i class="medium material-icons">web</i>
+                        <h5>Web Development</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, veritatis?
+                        </p>
+                    </div>
+                </div>
+                <div class="col m3 s12">
+                    <div class="card-panel center">
+                        <i class="medium material-icons">house</i>
+                        <h5>Landing Page</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, veritatis?
+                        </p>
+                    </div>
+                </div>
+                <div class="col m3 s12">
+                    <div class="card-panel center">
+                        <i class="medium material-icons">laptop</i>
+                        <h5>Web Application</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, veritatis?
+                        </p>
+                    </div>
+                </div>
+                <div class="col m3 s12">
+                    <div class="card-panel center">
+                        <i class="medium material-icons">link</i>
+                        <h5>API</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, veritatis?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio scrollSpy">
+        <div class="container">
+            <h3 class="center light blue-text text-darken-3">Portfolio</h3>
+            <div class="row">
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/ashwin-vaswani-qSofepNCARQ-unsplash.jpg" alt="ashwin-vaswani-qSofepNCARQ-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/ben-kolde-Ajcipx1VDXI-unsplash.jpg" alt="ben-kolde-Ajcipx1VDXI-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/benjamin-sow-S2QfaQN86w4-unsplash.jpg" alt="benjamin-sow-S2QfaQN86w4-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/denis-pavlovic-NVu_zR3-aQQ-unsplash.jpg" alt="denis-pavlovic-NVu_zR3-aQQ-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/goran-ivos-ly-RWaR0GXI-unsplash.jpg" alt="goran-ivos-ly-RWaR0GXI-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/huy-phan-bXy37LWsGjU-unsplash.jpg" alt="huy-phan-bXy37LWsGjU-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg" alt="oskar-yildiz-cOkpTiJMGzA-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+                <div class="col m3 s12">
+                    <img src="assets/img/portfolio/tamas-katona-pFGEZ7S1Wtc-unsplash.jpg" alt="tamas-katona-pFGEZ7S1Wtc-unsplash.jpg" class="responsive-img materialboxed">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!-- Contact Us -->
+    <section id="contact-us" class="contact-us grey lighten-3 scrollSpy">
+        <div class="container">
+            <h3 class="center light blue-text text-darken-3">Contact Us</h3>
+            <div class="row">
+                <div class="col m5 s12">
+                    <div class="card-panel blue lighten-2 center">
+                        <i class="small material-icons">email</i>
+                        <h5>Contact</h5>
+                        <p>semyluase@gmail.com</p>
+                    </div>
+                    <ul class="collection with-header center">
+                        <li class="collection-header">
+                            <i class="small material-icons">location_on</i>
+                            <h5>Our Office</h5>
+                        </li>
+                        <li class="collection-item">SL Web Developer</li>
+                        <li class="collection-item">Salatiga</li>
+                        <li class="collection-item"><a href="http://semy-luase.github.io">Our Website</a></li>
+                        <li class="collection-item"><i class="material-icons">chat_bubble</i> <a href="https://wa.me/085740299260">Whatsapp</a></li>
+                    </ul>
+                </div>
+                <div class="col m7 s12">
+                    <form action="">
+                        <div class="card-panel">
+                            <h5>Please fill out this form</h5>
+                            <div class="input-field">
+                                <input type="text" name="name" id="name" required class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" name="emaill" id="emaill" class="validate">
+                                <label for="emaill">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" name="phone" id="phone">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea name="message" id="message" class="materialize-textarea validate"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button class="waves-effect waves-light btn blue darken-2" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- Footer -->
+    <footer class="footer-copyright blue darken-3 center white-text flow-text">
+        <p>SL Web. Copyright &copy; 2021 | CSS : <a href="https://materializecss.com/" class="red-text text-lighten-3">MaterializeCSS</a>
+        </p>
+    </footer>
+    <!-- End Footer -->
 
     <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/node_modules/materialize-css/dist/js/materialize.min.js"></script>
 
+    <!-- Custom Script -->
+    <script>
+        const sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+            indicators: false,
+            height: 500,
+            interval: 1500
+        });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+        const materialboxed = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialboxed);
+
+        const scrollSpy = document.querySelectorAll('.scrollSpy');
+        M.ScrollSpy.init(scrollSpy, {
+            scrollOffset: 65
+        });
+    </script>
+    <script src="assets/js/myScript.js"></script>
 </body>
 
 </html>
